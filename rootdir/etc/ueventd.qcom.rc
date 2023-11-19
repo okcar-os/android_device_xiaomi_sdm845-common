@@ -25,8 +25,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import /vendor/etc/init/hw/ueventd.okcar.rc
-
 # Firmware directory Path
 # Below macro will be read by uevent and path will
 # be added to search path for firmware loading
@@ -433,3 +431,5 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/graphics/fb0     mode                     0664    system  graphics
 /sys/class/graphics/fb0     msm_cmd_autorefresh_en   0664    system  graphics
 /sys/class/graphics/fb0     dynamic_bitclk           0664    system  graphics
+
+import /vendor/etc/init/hw/ueventd.okcar.rc
